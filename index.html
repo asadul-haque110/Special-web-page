@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Light & Special</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: radial-gradient(circle at top right, #e0c3fc 0%, #8ec5fc 100%);
+      color: #333;
+    }
+    .center {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+    .bubble {
+      width: 80px;
+      height: 80px;
+      background: linear-gradient(135deg, #f3ec78, #af4261);
+      border-radius: 50%;
+      box-shadow: 0 0 40px #af426155;
+      margin-bottom: 32px;
+      animation: float 2s infinite ease-in-out;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 2.5rem;
+      color: white;
+    }
+    @keyframes float {
+      0% { transform: translateY(0);}
+      50% { transform: translateY(-20px);}
+      100% { transform: translateY(0);}
+    }
+    h1 {
+      font-weight: 400;
+      font-size: 2rem;
+      letter-spacing: 1px;
+    }
+    p {
+      margin-top: 12px;
+      font-size: 1.1rem;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+  <div class="center">
+    <div class="bubble">✨</div>
+    <h1>Hello, World!</h1>
+    <p>Here's something special & light.<br>Wishing you a bright day!</p>
+  </div>
+</body>
+</html>
